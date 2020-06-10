@@ -71,6 +71,9 @@ ul {
   ul li {
     margin: 16px 0; }
 
+.no-style {
+  list-style: none; }
+
 .quotes {
   margin: 0; }
   .quotes li {
