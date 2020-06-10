@@ -59,8 +59,9 @@ h3 {
   font-size: 36px;
   margin: 24px 0; }
 
-.large {
-  font-size: 20px; }
+.cta {
+  font-weight: 700;
+  margin-bottom: 16px; }
 
 p {
   margin: 24px 0; }
@@ -109,7 +110,7 @@ a {
   a:hover {
     border-bottom-color: #e7e7e7; }
 
-.button {
+.large {
   margin: 24px auto; }
 
 footer {
