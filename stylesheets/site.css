@@ -39,6 +39,9 @@ body {
 section {
   padding: 32px 0 0 0; }
 
+.home {
+  padding: 64px 0; }
+
 h1, h2 {
   color: #212121;
   font-family: bely, serif;
