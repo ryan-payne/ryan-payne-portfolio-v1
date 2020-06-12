@@ -12,35 +12,38 @@ body {
   font-family: franklin-gothic-urw, sans-serif;
   font-size: 18px;
   line-height: 150%;
-  padding: 0 32px 32px;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-@media (min-width: 640px) {
-  .container {
-    width: 90%;
-    margin: 0 auto; } }
-
-@media (min-width: 768px) {
-  .container {
-    width: 80%;
-    margin: 0 auto; } }
-
-@media (min-width: 1024px) {
-  .container {
-    width: 75%;
-    margin: 0 auto; } }
-
-@media (min-width: 1280px) {
-  .container {
-    width: 50%;
-    margin: 0 auto; } }
-
+.container {
+  padding: 0 32px; }
+  @media (min-width: 640px) {
+    .container {
+      width: 90%;
+      margin: 0 auto; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 80%;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .container {
+      width: 75%;
+      margin: 0 auto; } }
+  @media (min-width: 1280px) {
+    .container {
+      width: 50%;
+      margin: 0 auto; } }
 section {
   padding: 32px 0 0 0; }
 
 .home {
-  padding: 64px 0; }
+  display: flex;
+  height: 100vh;
+  align-items: center; }
+  .home section {
+    margin-top: -32px;
+    padding: 0; }
 
 h1, h2 {
   color: #212121;
@@ -49,6 +52,7 @@ h1, h2 {
 
 h1 {
   font-size: 48px;
+  line-height: 50px;
   margin-bottom: 40px;
   -webkit-text-decoration: underline solid #FFE100;
           text-decoration: underline solid #FFE100; }
@@ -114,7 +118,7 @@ a {
   margin: 24px auto; }
 
 footer {
-  padding: 24px;
+  padding: 40px;
   text-align: center; }
   footer ul {
     padding: 0;
