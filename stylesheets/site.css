@@ -1,57 +1,11 @@
-::-moz-selection {
-  background: #FFE100;
-  color: #212121; }
-
-::selection {
-  background: #FFE100;
-  color: #212121; }
-
-body {
-  background: white;
-  color: #212121;
-  font-family: franklin-gothic-urw, sans-serif;
-  font-size: 18px;
-  line-height: 150%;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.container {
-  padding: 0 32px; }
-  @media (min-width: 640px) {
-    .container {
-      width: 90%;
-      margin: 0 auto; } }
-  @media (min-width: 768px) {
-    .container {
-      width: 80%;
-      margin: 0 auto; } }
-  @media (min-width: 1024px) {
-    .container {
-      width: 75%;
-      margin: 0 auto; } }
-  @media (min-width: 1280px) {
-    .container {
-      width: 50%;
-      margin: 0 auto; } }
-section {
-  padding: 32px 0 0 0; }
-
-.home {
-  display: flex;
-  height: 100vh;
-  align-items: center; }
-  .home section {
-    margin-top: -32px;
-    padding: 0; }
-
 h1, h2 {
   color: #212121;
-  font-family: bely, serif;
-  font-weight: 700; }
+  font-family: rooney-web, serif;
+  letter-spacing: -.5px; }
 
 h1 {
   font-size: 48px;
+  font-weight: 500;
   line-height: 50px;
   margin-bottom: 40px;
   -webkit-text-decoration: underline solid #FFE100;
@@ -59,15 +13,13 @@ h1 {
 
 h2 {
   font-size: 24px;
+  font-weight: 700;
   margin: 0 0 24px 0; }
 
 h3 {
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 38px;
   margin: 24px 0; }
-
-.cta {
-  font-weight: 700;
-  margin-bottom: 16px; }
 
 p {
   margin: 24px 0;
@@ -79,8 +31,41 @@ ul {
   ul li {
     margin: 16px 0; }
 
-.no-style {
-  list-style: none; }
+.quotes {
+  margin: 0; }
+  .quotes li {
+    list-style: none; }
+
+blockquote {
+  background-image: url("../images/quote.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 35px 20px;
+  font-style: italic;
+  margin: 0 0 0 -40px;
+  padding: 0 0 16px 40px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  blockquote p {
+    margin: 0; }
+  blockquote cite {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal; }
+
+p {
+  margin: 24px 0;
+  line-height: 1.55em; }
+
+.large {
+  font-size: 20px; }
+
+ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0; }
+  ul li {
+    margin: 16px 0; }
 
 .quotes {
   margin: 0; }
@@ -110,12 +95,67 @@ a {
   color: #212121;
   display: inline-block;
   line-height: 22px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  a:hover {
+    border-bottom-color: #e7e7e7; }
+
+a {
+  border-bottom: 2px solid #FFE100;
+  color: #212121;
+  display: inline-block;
+  line-height: 22px;
   text-decoration: none; }
   a:hover {
     border-bottom-color: #e7e7e7; }
 
-.large {
-  margin: 24px auto; }
+.button {
+  font-weight: 700;
+  margin-bottom: 16px; }
+
+::-moz-selection {
+  background: #FFE100;
+  color: #212121; }
+
+::selection {
+  background: #FFE100;
+  color: #212121; }
+
+body {
+  background: #f9f9f9;
+  color: #212121;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.container {
+  padding: 0 32px; }
+  @media (min-width: 640px) {
+    .container {
+      width: 90%;
+      margin: 0 auto; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 80%;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .container {
+      width: 75%;
+      margin: 0 auto; } }
+  @media (min-width: 1280px) {
+    .container {
+      width: 50%;
+      margin: 0 auto; } }
+section {
+  padding: 32px 0 0 0; }
+
+.callout {
+  padding: 32px 24px;
+  text-align: center; }
 
 footer {
   padding: 40px;
@@ -126,4 +166,25 @@ footer {
     footer ul li {
       margin: 8px 0; }
   footer img {
-    width: 80px; }
+    width: 80px;
+    mix-blend-mode: multiply; }
+
+#progress {
+  --scroll: 0%;
+  background: -webkit-gradient(linear, left top, right top, from(#FFE100), color-stop(0, transparent));
+  background: linear-gradient(to right, #FFE100 var(--scroll), transparent 0);
+  position: fixed;
+  width: 100%;
+  height: 4px;
+  top: 0px;
+  z-index: 100; }
+
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center; }
+  .home section {
+    margin-top: -32px;
+    padding: 0; }
+  .home ul {
+    list-style: none; }
